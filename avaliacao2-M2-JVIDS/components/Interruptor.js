@@ -7,8 +7,8 @@ export default function Interruptor({ nome }) {
 
   return(
     <View>
-        <Text>{nome}: Desligado</Text>
-        <Button title=""/>
+        <Text>{nome}{ligado ? 'Ligado' : 'Desligado'}</Text>
+        <Button title="alternar" onPress={()=> setLigado(!ligado)}/>
     </View>
   )
 }
